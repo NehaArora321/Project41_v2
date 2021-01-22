@@ -108,13 +108,14 @@ class Game{
     }
 
     leaderboard(){
-        strokeWeight(3)
-        stroke("red")
-        fill("White")
-        textSize(45)
-        text("And the winner is !!",200,100)
+        form.hide();
+        strokeWeight(3);
+        stroke("red");
+        fill("White");
+        textSize(45);
+        text("And the winner is !!",200,100);
         Player.getPlayerInfo();
-        textSize(75)
+        textSize(75);
         for(var plr in allPlayers){
             if(allPlayers[plr].score >= 10 ){
                 text(allPlayers[plr].name,300,250);
